@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.template.mybatis_springboot.mapper.UserMapper">
+  <select id="getUsersByBirthday" resultType="com.template.mybatis_springboot.model.User">
+    select *
+    from user u
+    where u.birthday = #{birthday}
+  </select>
+</mapper>
